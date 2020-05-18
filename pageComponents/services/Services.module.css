@@ -1,0 +1,10 @@
+.section {
+  background: url('/img/layout/bg.jpg') center center;
+  background-size: cover;
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, .9);
+}
