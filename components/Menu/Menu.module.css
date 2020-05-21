@@ -52,7 +52,7 @@ a.logoLink:hover {
   list-style: none;
 }
 
-.links ul li a {
+.menuLink {
   text-transform: uppercase;
   margin: 0 20px;
   font-size: 15px;
@@ -60,11 +60,11 @@ a.logoLink:hover {
   color: rgba(0,0,0,.5);
 }
 
-.links ul li a:hover {
+.menuLink:hover {
     color: #0b6a9e;
 }
 
-.active {
+.aciveLink {
   color: #0b6a9e;
   font-weight: 600;
 }

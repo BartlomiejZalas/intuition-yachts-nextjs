@@ -1,0 +1,16 @@
+.bg {
+  background: #ebf1f5;
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.img {
+  width: 100%;
+  border: none;
+}
+
+.imgBig {
+    width: 100%;
+    border: none;
+    margin: 50px 0;
+}

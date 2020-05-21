@@ -5,6 +5,7 @@ import { locales } from '../../translations/config';
 import { LocaleContext } from '../../context/LocaleContext';
 import { useRouter } from 'next/router';
 import { Locale } from '../../translations/types';
+import MenuLink from './MenuLink';
 
 const Menu: React.FC = () => {
   const { t, locale } = useContext(LocaleContext);
@@ -31,37 +32,41 @@ const Menu: React.FC = () => {
           <div className={styles.links}>
             <ul>
               <li>
-                <Link href="/[lang]/about" as={`/${locale}/about`}>
-                  <a
-                    className={
-                      router.pathname === `/[lang]/about`
-                        ? styles.active
-                        : undefined
-                    }
-                  >
-                    {t('menuAbout')}
-                  </a>
-                </Link>
+                <MenuLink
+                  text={t('menuAbout')}
+                  href="/[lang]/about"
+                  as={`/${locale}/about`}
+                />
               </li>
               <li>
-                <Link href="/[lang]/services" as={`/${locale}/services`}>
-                  <a>{t('menuServices')}</a>
-                </Link>
+                <MenuLink
+                  text={t('menuServices')}
+                  href="/[lang]/services"
+                  as={`/${locale}/services`}
+                />
               </li>
               <li>
-                <Link href="/[lang]/projects" as={`/${locale}/projects`}>
-                  <a>{t('menuProjects')}</a>
-                </Link>
+                <MenuLink
+                  text={t('menuProjects')}
+                  href="/[lang]/projects"
+                  as={`/${locale}/projects`}
+                />
               </li>
               <li>
-                <Link href="/[lang]/partners" as={`/${locale}/partners`}>
-                  <a>{t('menuPartners')}</a>
-                </Link>
+                <MenuLink
+                  text={t('menuPartners')}
+                  href="/[lang]"
+                  as={`/${locale}`}
+                  anchor="partners"
+                />
               </li>
               <li>
-                <Link href="/[lang]/contact" as={`/${locale}/contact`}>
-                  <a>{t('menuContact')}</a>
-                </Link>
+                <MenuLink
+                  text={t('menuContact')}
+                  href="/[lang]"
+                  as={`/${locale}`}
+                  anchor="contact"
+                />
               </li>
             </ul>
           </div>

@@ -1,11 +1,13 @@
-import React from 'react';
-
+import { useContext } from 'react';
+import { LocaleContext } from '../../context/LocaleContext';
 import { locales } from '../../translations/config';
+import About from '../../pageComponents/about/About';
+import { Variant } from '../../types/types';
 import { LangProps } from '../../translations/types';
-import Projects from '../../pageComponents/projects/Projects';
 
-const ProjectsPage: React.FC<LangProps> = ({ lang }) => {
-  return <Projects lang={lang} />;
+const AboutPage: React.FC<LangProps> = () => {
+  const { locale } = useContext(LocaleContext);
+  return <About lang={locale} variant={Variant.FULL} />;
 };
 
 export async function getStaticPaths() {
@@ -23,4 +25,4 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export default ProjectsPage;
+export default AboutPage;
