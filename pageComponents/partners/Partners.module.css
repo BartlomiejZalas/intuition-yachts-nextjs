@@ -1,0 +1,12 @@
+.section {
+    display: flex;
+    background: linear-gradient(#FFF, #ebf1f5);
+    padding-bottom: 50px;
+}
+
+.anchorOffset {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}

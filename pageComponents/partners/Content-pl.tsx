@@ -4,6 +4,7 @@ export const ContentComponent: React.FC = () => {
   return (
     <div>
       <h2 className="subsectionTitle">Yacht Studio Strawiński</h2>
+      <img src="/img/pages/partners/strawinski.png" />
       <p>
         Niezależna firma projektowa powstała w 1981r. z siedzibą w Sopocie.
         Specjalizuje się w projektach indywidualnych, wykonywanych pod
@@ -16,6 +17,7 @@ export const ContentComponent: React.FC = () => {
       <hr />
 
       <h2 className="subsectionTitle">Seacon Engineering</h2>
+      <img src="/img/pages/partners/seacon.png" />
       <p>
         Seacon Engineering to niezależne biuro projektowe zlokalizowane w
         Gdańsku, sercu polskiego przemysłu stoczniowego, st- worzone z pasji do
@@ -27,6 +29,7 @@ export const ContentComponent: React.FC = () => {
       <hr />
 
       <h2 className="subsectionTitle">Polskie Jachty</h2>
+      <img src="/img/pages/partners/polskie-jachty.png" />
       <p>
         “Polska Izba Przemysłu Jachtowego i Sportów Wodnych – POLSKIE JACHTY
         została założona 11 maja 2006 r. w Warszawie. Członkami założycielami
