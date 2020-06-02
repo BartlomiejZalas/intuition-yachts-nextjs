@@ -6,7 +6,7 @@
 }
 
 .container {
-  background-color: rgba(255, 255, 255, .75);
+  background-color: rgba(255, 255, 255, .9);
 }
 
 .input {
@@ -53,4 +53,18 @@
   position: relative;
   top: -100px;
   visibility: hidden;
+}
+
+.title {
+  /* text-align: center; */
+}
+
+.lead {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.sub {
+  font-size: 20px;
+  font-weight: 300;
 }

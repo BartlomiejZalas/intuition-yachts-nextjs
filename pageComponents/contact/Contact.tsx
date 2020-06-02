@@ -15,11 +15,11 @@ const Contact: React.FC<LangProps> = ({ lang }) => {
         <hr />
         <div className="columnContainer">
           <div className="column-1">
-            <h2 className="subsectionTitle">{t('contactDetails')}</h2>
+            <h2 className="subsectionTitle">{t('contactDetails')}:</h2>
             <ContentComponent />
           </div>
           <div className="column-1">
-            <h2 className="subsectionTitle">{t('contactForm')}</h2>
+            <h2 className="subsectionTitle">{t('contactForm')}:</h2>
             <input
               type="text"
               className={styles.input}

@@ -1,8 +1,0 @@
-.imageContainer {
-    width: 100%;
-    height: 100%;
-    background-image: url('/img/layout/home.jpg');
-    background-position: center top;
-    background-size: cover;
-    margin-top: -100px;
-}
