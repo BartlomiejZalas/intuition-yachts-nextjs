@@ -1,0 +1,31 @@
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/layout/home.jpg');
+  background-position: center top;
+  background-size: cover;
+  margin-top: -100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.logo {
+    font-weight: 300;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 21px;
+}
+
+.logo .lead {
+  color: #0b6a9e;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.logo .secondary {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 8pt;
+  color: #99a2a7;
+}
