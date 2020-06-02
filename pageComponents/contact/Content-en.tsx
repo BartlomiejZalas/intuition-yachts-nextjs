@@ -4,7 +4,7 @@ import styles from './Contact.module.css';
 export const ContentComponent: React.FC = () => {
   return (
     <>
-      <p className={styles.title}>
+      <p>
         <div className={styles.lead}>Marta Anna Zawadzka </div>
         <div className={styles.sub}>Naval Architect &amp; Yacht Designer</div>
       </p>
