@@ -6,7 +6,7 @@ export const ContentComponent: React.FC = () => {
     <>
       <p>
         <div className={styles.lead}>Marta Anna Zawadzka </div>
-        <div className={styles.sub}>Naval Architect &amp; Yacht Designer</div>
+        <div className={styles.sub + ' bradleyFont'}>Naval Architect &amp; Yacht Designer</div>
       </p>
       <p>
         <strong>Polska</strong>

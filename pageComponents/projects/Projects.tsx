@@ -10,7 +10,7 @@ const Projects: React.FC<LangProps> = ({ lang }) => {
 
   const projectLayout = (project: Project) => (
     <div className="column-1">
-      <h2 className="subsectionTitle">
+      <h2 className="subsectionTitle bradleyFont">
         <Link
           href="/[lang]/projects/[id]"
           as={`/${lang}/projects/${project.id}`}

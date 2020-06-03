@@ -31,10 +31,10 @@ export const ContentComponent: React.FC = () => {
       <h2 className="subsectionTitle">Polskie Jachty</h2>
       <img src="/img/pages/partners/polskie-jachty.png" />
       <p>
-        “Polska Izba Przemysłu Jachtowego i Sportów Wodnych – POLSKIE JACHTY
+        "Polska Izba Przemysłu Jachtowego i Sportów Wodnych – POLSKIE JACHTY"
         została założona 11 maja 2006 r. w Warszawie. Członkami założycielami
         było sto podmiotów gospodarczych działających w branży produkcji, usług,
-        sportu i turystyki wod- nej. Wielomiesięczne starania grona osób, wśród
+        sportu i turystyki wodnej. Wielomiesięczne starania grona osób, wśród
         których było wielu członków Stowarzyszenia Polskie Jachty, zakończyły
         się sukcesem i powstaniem wyższej formy organizacyjnej jaką jest Izba
         Gospodarcza.” Od lutego 2020 roku Intuition Yachts jest dumnym członkiem

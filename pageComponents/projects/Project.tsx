@@ -15,7 +15,7 @@ const Project: React.FC<Props> = ({ id }) => {
   return (
     <section>
       <div className="container">
-        <h1 className="sectionTitle">{project.title}</h1>
+        <h1 className="sectionTitle bradleyFont">{project.title}</h1>
         <hr />
         <p>{t(id + '-description')}</p>
         <div className={styles.gallery}>

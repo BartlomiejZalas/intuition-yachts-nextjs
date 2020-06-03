@@ -1,5 +1,15 @@
+@font-face {
+  font-family: "Bradley Hand";
+  src: url(BRADHITC_PL.ttf) format("truetype");
+}
+
+.bradleyFont {
+  font-family: 'Bradley Hand';
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   background: #fff;
   margin: 0;
   padding: 100px 0 0 0;
@@ -25,13 +35,16 @@ a,
   font-weight: 300;
   line-height: 1.2;
   font-size: 3.5rem;
+  color: #99a2a7;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 5pt;
 }
 
 .subsectionTitle {
   font-weight: 300;
   line-height: 1.2;
   font-size: 2rem;
-
 }
 
 .subsectionTitle a {
