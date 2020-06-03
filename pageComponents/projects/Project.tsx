@@ -1,23 +1,22 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { PROJECTS } from './projects';
 import { LangProps } from '../../translations/types';
 import styles from './Projects.module.css';
-import { LocaleContext } from '../../context/LocaleContext';
 
 interface Props extends LangProps {
   id: string;
 }
 
-const Project: React.FC<Props> = ({ id }) => {
+const Project: React.FC<Props> = ({ id, lang }) => {
   const project = PROJECTS.find((p) => p.id === id);
-  const { t } = useContext(LocaleContext);
+  const { ContentComponent } = require(`./content/Content-${id}-${lang}`);
 
   return (
     <section data-section="projects">
       <div className="container">
         <h1 className="sectionTitle bradleyFont">{project.title}</h1>
         <hr />
-        <p>{t(id + '-description')}</p>
+        <ContentComponent />
         <div className={styles.gallery}>
           {Array(project.images)
             .fill(0)
