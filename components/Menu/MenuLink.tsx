@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import styles from './Menu.module.css';
 
 interface Props {
@@ -8,18 +7,13 @@ interface Props {
   href: string;
   as: string;
   anchor?: string;
+  active: boolean;
 }
 
-const MenuLink: React.FC<Props> = ({ text, href, as, anchor }) => {
-  const router = useRouter();
+const MenuLink: React.FC<Props> = ({ text, href, as, anchor, active }) => {
   return (
     <Link href={href} as={as + (anchor ? '#' + anchor : '')}>
-      <a
-        className={
-          styles.menuLink +
-          (router.pathname === href && !anchor ? ' ' + styles.aciveLink : '')
-        }
-      >
+      <a className={styles.menuLink + (active ? ' ' + styles.aciveLink : '')}>
         {text}
       </a>
     </Link>

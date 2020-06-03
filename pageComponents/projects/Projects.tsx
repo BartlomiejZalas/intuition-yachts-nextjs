@@ -31,7 +31,7 @@ const Projects: React.FC<LangProps> = ({ lang }) => {
   );
 
   return (
-    <section className={styles.bg}>
+    <section className={styles.bg} data-section="projects">
       <div className="container">
         <h1 className="sectionTitle">{t('titleProjects')}</h1>
         <hr />

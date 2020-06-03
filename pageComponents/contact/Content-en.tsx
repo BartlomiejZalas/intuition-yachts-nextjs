@@ -4,10 +4,10 @@ import styles from './Contact.module.css';
 export const ContentComponent: React.FC = () => {
   return (
     <>
-      <p>
-        <div className={styles.lead}>Marta Anna Zawadzka </div>
-        <div className={styles.sub + ' bradleyFont'}>Naval Architect &amp; Yacht Designer</div>
-      </p>
+      <div className={styles.lead}>Marta Anna Zawadzka </div>
+      <div className={styles.sub + ' bradleyFont'}>
+        Naval Architect &amp; Yacht Designer
+      </div>
       <p>
         <strong>Poland</strong>
         <br />

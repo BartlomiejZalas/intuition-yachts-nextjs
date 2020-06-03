@@ -14,7 +14,7 @@ const About: React.FC<Props> = ({ lang, variant }) => {
   const { ContentComponent } = require(`./Content-${lang}`);
 
   return (
-    <section className={styles.bg}>
+    <section className={styles.bg} data-section="about">
       <div className="container">
         <h1 className="sectionTitle">{t('titleAbout')}</h1>
         <hr />

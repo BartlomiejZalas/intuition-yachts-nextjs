@@ -8,8 +8,7 @@ const Contact: React.FC<LangProps> = ({ lang }) => {
   const { ContentComponent } = require(`./Content-${lang}`);
 
   return (
-    <section className={styles.bg}>
-      <a id="contact" className={styles.anchorOffset}></a>
+    <section className={styles.bg} data-section="contact">
       <div className={styles.container + ' container'}>
         <h1 className="sectionTitle">{t('titleContact')}</h1>
         <hr />

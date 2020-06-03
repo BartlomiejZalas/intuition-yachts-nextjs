@@ -8,8 +8,7 @@ const Partners: React.FC<LangProps> = ({ lang }) => {
   const { ContentComponent } = require(`./Content-${lang}`);
 
   return (
-    <section className={styles.section}>
-      <a id="partners" className={styles.anchorOffset}></a>
+    <section className={styles.section} data-section="partners">
       <div className="container">
         <h1 className="sectionTitle">{t('titlePartners')}</h1>
         <hr />

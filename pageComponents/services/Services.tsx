@@ -14,7 +14,7 @@ const Services: React.FC<Props> = ({ lang, variant }) => {
   const { ContentComponent } = require(`./Content-${lang}`);
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section}  data-section="services">
       <div className={styles.container + ' container'}>
         <h1 className="sectionTitle">{t('titleServices')}</h1>
         <hr />

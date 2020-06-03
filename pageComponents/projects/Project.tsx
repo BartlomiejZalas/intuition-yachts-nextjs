@@ -13,7 +13,7 @@ const Project: React.FC<Props> = ({ id }) => {
   const { t } = useContext(LocaleContext);
 
   return (
-    <section>
+    <section data-section="projects">
       <div className="container">
         <h1 className="sectionTitle bradleyFont">{project.title}</h1>
         <hr />
