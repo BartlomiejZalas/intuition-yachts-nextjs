@@ -16,7 +16,9 @@ const Project: React.FC<Props> = ({ id, lang }) => {
       <div className="container">
         <h1 className="sectionTitle bradleyFont">{project.title}</h1>
         <hr />
-        <ContentComponent />
+        <div className={styles.content}>
+          <ContentComponent />
+        </div>
         <div className={styles.gallery}>
           {Array(project.images)
             .fill(0)
