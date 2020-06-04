@@ -23,7 +23,7 @@ const Project: React.FC<Props> = ({ id, lang }) => {
           {Array(project.images)
             .fill(0)
             .map((_, index) => (
-              <div className={styles.imageBoxContainer}>
+              <div className={styles.imageBoxContainer} key={index}>
                 <div className={styles.imageBox}>
                   <a href={`/img/pages/projects/${id}/${index}.jpg`}>
                     <img
