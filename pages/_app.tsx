@@ -1,4 +1,5 @@
 import '../styles/global.css';
+import 'react-image-lightbox/style.css';
 import Layout from '../components/Layout/Layout';
 import useTranslations from '../hooks/useTranslations';
 import { LocaleContext } from '../context/LocaleContext';

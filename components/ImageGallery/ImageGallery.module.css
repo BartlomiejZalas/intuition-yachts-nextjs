@@ -1,0 +1,24 @@
+
+.gallery {
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.imageBoxContainer {
+  width: 33%;
+}
+
+.imageBox {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+
+.image {
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}

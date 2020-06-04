@@ -2,6 +2,7 @@ import React from 'react';
 import { PROJECTS } from './projects';
 import { LangProps } from '../../translations/types';
 import styles from './Projects.module.css';
+import { ImageGallery } from '../../components/ImageGallery/ImageGallery';
 
 interface Props extends LangProps {
   id: string;
@@ -10,6 +11,9 @@ interface Props extends LangProps {
 const Project: React.FC<Props> = ({ id, lang }) => {
   const project = PROJECTS.find((p) => p.id === id);
   const { ContentComponent } = require(`./content/Content-${id}-${lang}`);
+  const images: string[] = Array(project.images)
+    .fill(0)
+    .map((_, index) => `/img/pages/projects/${id}/${index}.jpg`);
 
   return (
     <section data-section="projects">
@@ -19,23 +23,7 @@ const Project: React.FC<Props> = ({ id, lang }) => {
         <div className={styles.content}>
           <ContentComponent />
         </div>
-        <div className={styles.gallery}>
-          {Array(project.images)
-            .fill(0)
-            .map((_, index) => (
-              <div className={styles.imageBoxContainer} key={index}>
-                <div className={styles.imageBox}>
-                  <a href={`/img/pages/projects/${id}/${index}.jpg`}>
-                    <img
-                      src={`/img/pages/projects/${id}/${index}.jpg`}
-                      alt={project.title}
-                      className={styles.image}
-                    />
-                  </a>
-                </div>
-              </div>
-            ))}
-        </div>
+        <ImageGallery images={images} />
       </div>
     </section>
   );
