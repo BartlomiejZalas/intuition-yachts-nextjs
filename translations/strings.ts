@@ -25,6 +25,10 @@ const strings: Strings = {
     subjectLabel: 'Subject',
     messageLabel: 'Message',
     sendButton: 'Send',
+
+    formValidationError: 'All fields are required!',
+    messageSent: 'Message has been sent.',
+    sendingError: 'Error: message has not been sent!',
   },
   pl: {
     menuAbout: 'O nas',
@@ -51,6 +55,10 @@ const strings: Strings = {
     subjectLabel: 'Temat',
     messageLabel: 'Wiadomość',
     sendButton: 'Wyślij',
+
+    formValidationError: 'Wypełnij wszystkie pola!',
+    messageSent: 'Wiadomość została wysłana.',
+    sendingError: 'Błąd: wiadomość nie została wysłana!',
   },
 };
 
