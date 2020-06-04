@@ -1,5 +1,6 @@
 .section {
     display: flex;
-    background: linear-gradient(#FFF, #ebf1f5);
+    /* background: linear-gradient(#FFF, #ebf1f5); */
+    background: linear-gradient(#eef8fe, #fff);
     padding-bottom: 50px;
 }

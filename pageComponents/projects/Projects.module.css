@@ -1,5 +1,6 @@
 .bg {
-  background: #ebf1f5;
+  /* background: #ebf1f5; */
+  background: linear-gradient(#eef8fe, #fff);
   display: flex;
   padding-bottom: 50px;
 }
