@@ -28,7 +28,10 @@ const strings: Strings = {
 
     formValidationError: 'All fields are required!',
     messageSent: 'Message has been sent.',
-    sendingError: 'Error: message has not been sent!',
+    sendingError: 'Error: message has not been sent! Please try again later.',
+    requiredError: 'Field is required!',
+    toLongError: 'Value is to long!',
+    invalidEmailError: 'Email must be valid!',
   },
   pl: {
     menuAbout: 'O nas',
@@ -58,7 +61,10 @@ const strings: Strings = {
 
     formValidationError: 'Wypełnij wszystkie pola!',
     messageSent: 'Wiadomość została wysłana.',
-    sendingError: 'Błąd: wiadomość nie została wysłana!',
+    sendingError: 'Błąd: wiadomość nie została wysłana! Prosimy spróbować później.',
+    requiredError: 'Pole wymagane!',
+    toLongError: 'Zawartość jest za długa!',
+    invalidEmailError: 'Email musi być prawidłowy!'
   },
 };
 

@@ -12,7 +12,7 @@
 
 .input {
   display: block;
-  width: 100%;
+  width: calc(100% - 1.5rem - 2px);
   height: calc(2.25rem + 2px);
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
@@ -40,7 +40,7 @@
 }
 
 .btn {
-  background: #007bff;
+  background: #0b6a9e;
   border: none;
   border-radius: 0.25rem;
   font-size: 1rem;
@@ -61,12 +61,38 @@
   margin-bottom: 20px;
 }
 
-.ohnohoney{
-  opacity: 0;
+.overlayContainer {
+  position: relative;
+}
+
+.overlay {
   position: absolute;
-  top: 0;
   left: 0;
-  height: 0;
-  width: 0;
-  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255, .75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success {
+  padding: 50px;
+  text-align: center;
+  border: 1px solid #c3e6cb;
+  background: #d4edda;
+  color: #155724;
+  border-radius: .25rem;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.e {
+  color: red;
 }
