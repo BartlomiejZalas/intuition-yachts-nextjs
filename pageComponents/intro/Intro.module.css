@@ -12,7 +12,7 @@
 
 .logo {
     font-weight: 300;
-    text-align: right;
+    text-align: center;
     margin-top: 20px;
     margin-bottom: 21px;
 }
@@ -28,4 +28,12 @@
   text-transform: uppercase;
   letter-spacing: 8pt;
   color: #99a2a7;
+  text-align: right;
+}
+
+@media (max-width: 1000px) {
+
+.logo .secondary {
+  text-align: center;
+}
 }

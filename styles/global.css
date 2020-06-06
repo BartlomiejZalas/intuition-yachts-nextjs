@@ -77,6 +77,13 @@ footer {
   flex-direction: row;
 }
 
+@media (max-width: 1000px) {
+
+  .columnContainer {
+    flex-direction: column;
+  }
+}
+
 .column-1 {
   flex: 1;
   margin: 10px;

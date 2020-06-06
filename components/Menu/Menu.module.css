@@ -5,6 +5,7 @@
   right: 0;
   background: #fff;
   border-bottom: 1px solid #EEE;
+  display: flex;
 }
 
 .content {
@@ -47,7 +48,7 @@ a.logoLink:hover {
 }
 
 .links ul li {
-  padding: 0;
+  padding: 10px 0;
   margin: 0;
   list-style: none;
 }
@@ -71,7 +72,6 @@ a.logoLink:hover {
 
 .langMenu {
   height: 100%;
-  margin-right: 20px;
 }
 
 .langMenu ul {
@@ -83,7 +83,7 @@ a.logoLink:hover {
 }
 
 .langMenu li {
-    padding: 0;
+    padding: 10px 0;
     margin: 0;
     list-style: none; 
 }
@@ -101,4 +101,57 @@ a.logoLink:hover {
 
   .langMenu ul li a.activeLang {
     text-decoration: underline;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.mobileMenuIcon {
+  color: #999;
+  border: none;
+  background: none;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1000px) {
+  .mobileMenu {
+    display: block;
+  }
+
+  .langMenu, .links {
+    display: none;
+  }
+
+  .opened {
+    display: block;
+  }
+
+  .links ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .langMenu ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contentMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .topBar{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
 }
