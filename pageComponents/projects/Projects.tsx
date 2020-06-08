@@ -10,16 +10,9 @@ const Projects: React.FC<LangProps> = ({ lang }) => {
 
   const projectLayout = (project: Project) => (
     <div className="column-1">
-      <h2 className="subsectionTitle bradleyFont">
-        <Link
-          href="/[lang]/projects/[id]"
-          as={`/${lang}/projects/${project.id}`}
-        >
-          <a>{project.title} </a>
-        </Link>
-      </h2>
       <Link href="/[lang]/projects/[id]" as={`/${lang}/projects/${project.id}`}>
-        <a>
+        <a className={styles.link}>
+          <h2 className="subsectionTitle bradleyFont">{project.title}</h2>
           <img
             src={'/img/pages/projects/' + project.id + '.png'}
             alt={project.title}

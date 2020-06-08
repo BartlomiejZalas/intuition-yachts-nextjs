@@ -1,5 +1,4 @@
 .bg {
-  /* background: #ebf1f5; */
   background: linear-gradient(#eef8fe, #fff);
   display: flex;
   padding-bottom: 50px;
@@ -11,4 +10,12 @@
 
 .img {
   width: 100%
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  opacity: .5;
 }

@@ -49,18 +49,6 @@
   cursor: pointer;
 }
 
-.lead {
-  margin-top: 20px;
-  font-size: 36px;
-  font-weight: 300;
-}
-
-.sub {
-  font-size: 20px;
-  font-weight: 300;
-  margin-bottom: 20px;
-}
-
 .overlayContainer {
   position: relative;
 }
