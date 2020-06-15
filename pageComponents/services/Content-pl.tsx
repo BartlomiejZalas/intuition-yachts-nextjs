@@ -21,7 +21,7 @@ export const ContentComponent: React.FC<ContentProps> = ({ variant }) => {
           <li>Rysunki techniczne</li>
           <li>Konstrukcje metalowe oraz kompozytowe</li>
           <li>
-            Wyposażenie dobór urządzeń, elektroniki jak również materiałów
+            Wyposażenie: dobór urządzeń, elektroniki jak również materiałów
             wykończeniowych
           </li>
           <li>Projekty wnętrz</li>
@@ -72,7 +72,7 @@ export const ContentComponent: React.FC<ContentProps> = ({ variant }) => {
           />
 
           <h2>
-            Wyposażenie dobór urządzeń, elektroniki jak również materiałów
+            Wyposażenie: dobór urządzeń, elektroniki jak również materiałów
             wykończeniowych
           </h2>
           <hr />

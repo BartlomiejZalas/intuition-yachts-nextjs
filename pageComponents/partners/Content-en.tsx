@@ -33,13 +33,21 @@ export const ContentComponent: React.FC = () => {
       <hr />
 
       <h2 className="subsectionTitle">
-        Polska Izba Przemysłu Jachtowego i Sportów Wodnych
+        The Polish Chamber of Marine Industry and Water Sports
       </h2>
       <a href=" http://polboat.eu">
         <img src="/img/pages/partners/polskie-jachty.png" />
       </a>
       <p>
-        
+        “The Polish Chamber of Marine Industry and Water Sports – POLBOAT was
+        established on 11 May 2006 in Warsaw. The founding members were hundred
+        business entities conducting activities in the field of production,
+        services, water sports and water tourism. Multi-month efforts of a group
+        of people, among which there were many members of the Polish Yachting
+        Association, were successful and resulted in establishment of a superior
+        organizational form being the Economic Chamber." Since February 2020,
+        Intuition Yachts is a proud member of the organization, trying to take
+        an active part in events organized by the Chamber.
       </p>
     </div>
   );

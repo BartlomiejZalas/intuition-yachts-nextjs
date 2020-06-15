@@ -2,7 +2,7 @@
   border-top: 1px solid rgba(0, 0, 0, .1);
   border-bottom: 1px solid rgba(0, 0, 0, .1);
   background: url('/img/layout/bg.jpg') center center;
-  background-size: cover;
+  background-repeat: repeat-y;
   display: flex;
   padding-bottom: 50px;
 }
