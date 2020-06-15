@@ -21,7 +21,7 @@ const About: React.FC<Props> = ({ lang, variant }) => {
         <div className="columnContainer">
           <div className="column-1">
             <img
-              src="/img/pages/about/about2.jpg"
+              src="/img/pages/about/about.jpg"
               alt="Marta Zawadzka"
               className={styles.img}
             />
