@@ -1,16 +1,26 @@
 .socialIcons {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
   z-index: 200;
 }
+
 .socialIconsLink {
   display: block;
   margin: 0;
   padding: 16px;
   font-size: 20px;
   border-radius: 0;
+}
+
+@media (max-width: 500px) {
+  .socialIconsLink {
+    padding: 12px;
+    font-size: 15px;
+  }
 }
 
 .social-icons a:hover {

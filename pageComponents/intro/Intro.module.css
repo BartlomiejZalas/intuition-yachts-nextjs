@@ -11,10 +11,10 @@
 }
 
 .logo {
-    font-weight: 300;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 21px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 21px;
 }
 
 .logo .lead {
@@ -31,9 +31,15 @@
   text-align: right;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
+  .logo .lead {
+    font-size: 30px;
+    line-height: 30px;
+  }
 
-.logo .secondary {
-  text-align: center;
-}
+  .logo .secondary {
+    font-size: 10px;
+    letter-spacing: 4pt;
+
+  }
 }

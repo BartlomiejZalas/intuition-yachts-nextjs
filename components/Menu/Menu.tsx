@@ -57,9 +57,9 @@ const Menu: React.FC = () => {
   const handleRouteChange = () => setOpen(false);
 
   useEffect(() => {
-    Router.events.on('routeChangeEnd', handleRouteChange);
+    Router.events.on('routeChangeComplete', handleRouteChange);
     return () => {
-      Router.events.off('routeChangeEnd', handleRouteChange)
+      Router.events.off('routeChangeComplete', handleRouteChange)
     }
   }, []);
 
