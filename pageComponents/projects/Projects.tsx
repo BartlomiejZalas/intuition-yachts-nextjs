@@ -8,6 +8,17 @@ import Link from 'next/link';
 const Projects: React.FC<LangProps> = ({ lang }) => {
   const { t } = useTranslation();
 
+  const disabledPlaceholder = (project: Project) => (
+    <div className="column-1">
+          <h2 className="subsectionTitle bradleyFont">{project.title}</h2>
+          <img
+            src={'/img/layout/comingSoon.png'}
+            alt={project.title}
+            className={styles.img}
+          />
+    </div>
+  );
+
   const projectLayout = (project: Project) => (
     <div className="column-1">
       <Link href="/[lang]/projects/[id]" as={`/${lang}/projects/${project.id}`}>
@@ -34,7 +45,7 @@ const Projects: React.FC<LangProps> = ({ lang }) => {
           {projectLayout(PROJECTS[1])}
         </div>
         <div className="columnContainer">
-          {projectLayout(PROJECTS[2])}
+          {disabledPlaceholder(PROJECTS[2])}
           {projectLayout(PROJECTS[3])}
         </div>
         <div className="columnContainer">

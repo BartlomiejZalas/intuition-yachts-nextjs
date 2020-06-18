@@ -3,7 +3,7 @@ import styles from './Menu.module.css';
 import Link from 'next/link';
 import { locales } from '../../translations/config';
 import { LocaleContext } from '../../context/LocaleContext';
-import { useRouter } from 'next/router';
+import { useRouter, Router } from 'next/router';
 import { Locale } from '../../translations/types';
 import MenuLink from './MenuLink';
 import throttle from 'lodash.throttle';
@@ -53,6 +53,15 @@ const Menu: React.FC = () => {
       window.removeEventListener('scroll', onScroll);
     };
   });
+
+  const handleRouteChange = () => setOpen(false);
+
+  useEffect(() => {
+    Router.events.on('routeChangeEnd', handleRouteChange);
+    return () => {
+      Router.events.off('routeChangeEnd', handleRouteChange)
+    }
+  }, []);
 
   return (
     <div className={styles.menu}>

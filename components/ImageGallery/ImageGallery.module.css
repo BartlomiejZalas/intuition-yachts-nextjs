@@ -11,6 +11,13 @@
   width: 33%;
 }
 
+@media (max-width: 1000px) {
+
+  .imageBoxContainer {
+    width: 100%;
+  }
+}
+
 .imageBox {
   padding: 10px;
   border: 1px solid #ccc;

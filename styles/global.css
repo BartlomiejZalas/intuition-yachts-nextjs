@@ -67,7 +67,7 @@ footer {
 
 .container {
   max-width: 1140px;
-  width: 100%;
+  flex: 1;
   margin: 0 auto;
   padding: 0 20px;
 }
