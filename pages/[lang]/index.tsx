@@ -7,10 +7,12 @@ import Partners from '../../pageComponents/partners/Partners';
 import Projects from '../../pageComponents/projects/Projects';
 import Contact from '../../pageComponents/contact/Contact';
 import Intro from '../../pageComponents/intro/Intro';
+import Meta from '../../components/Meta/Meta';
 
 const Home: React.FC<LangProps> = ({ lang }) => {
   return (
     <>
+      <Meta />
       <Intro />
       <About lang={lang} variant={Variant.SHORT} />
       <Services lang={lang} variant={Variant.SHORT} />

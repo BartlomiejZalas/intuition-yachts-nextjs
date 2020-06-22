@@ -4,10 +4,18 @@ import { locales } from '../../translations/config';
 import About from '../../pageComponents/about/About';
 import { Variant } from '../../types/types';
 import { LangProps } from '../../translations/types';
+import Meta from '../../components/Meta/Meta';
+import useTranslation from '../../hooks/useTranslations';
 
 const AboutPage: React.FC<LangProps> = () => {
   const { locale } = useContext(LocaleContext);
-  return <About lang={locale} variant={Variant.FULL} />;
+  const { t } = useTranslation();
+  return (
+    <>
+      <Meta suffix={t('titleAbout')} />
+      <About lang={locale} variant={Variant.FULL} />
+    </>
+  );
 };
 
 export async function getStaticPaths() {
