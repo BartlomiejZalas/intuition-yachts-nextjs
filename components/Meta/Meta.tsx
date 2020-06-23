@@ -7,12 +7,12 @@ interface Props {
 }
 
 const Meta: React.FC<Props> = ({ suffix }) => {
-  const descriptionSuffix = suffix ? ` - ${suffix}` : ' - official website';
+  const suffixString = suffix ? ` - ${suffix}` : ' - official website';
   const description: string =
-    'Intuition Yachts Design Studio' + descriptionSuffix;
+    'Intuition Yachts Design Studio' + suffixString;
   return (
     <Head>
-      <title>Intuition Yachts Design Studio Marta Zawadzka{descriptionSuffix}</title>
+      <title>Intuition Yachts Design Studio Marta Zawadzka{suffixString}</title>
       <meta name="description" content={description} />
     </Head>
   );
