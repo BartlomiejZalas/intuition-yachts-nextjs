@@ -17,7 +17,7 @@ const sendEmail = async (name: string, email: string, subject: string, message: 
   await transporter.sendMail({
     from: `Intuition Yachts Studio <${process.env.EMAIL_USER}>`, 
     replyTo: `${name} <${email}>`,
-    to: 'bartekzalas@gmail.com', // TODO change it to marta@intuition-yachts.com
+    to: 'marta@intuition-yachts.com',
     subject: subject, 
     text: `${message} \n\n ${name} (${email})`,
   });
