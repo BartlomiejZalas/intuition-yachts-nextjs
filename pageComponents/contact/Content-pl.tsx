@@ -5,13 +5,11 @@ export const ContentComponent: React.FC = () => {
   return (
     <>
       <p>
-        <strong>Polska</strong>
-        <br />
-        Sokółki 63 <br />
-        19-420 Sokółki <br />
+        <strong>Polska</strong> <br />
+        ul. Jabłoniowa 20, <br />
+        80-175 Gdańsk <br />
         tel.: +48 500 204 025 <br />
-        woj. warmińsko-mazurskie
-        <br />
+        woj. pomorskie <br />
         e-mail: marta@intuition-yachts.com
       </p>
       <p>
