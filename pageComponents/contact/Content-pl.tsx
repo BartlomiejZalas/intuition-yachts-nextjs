@@ -10,7 +10,7 @@ export const ContentComponent: React.FC = () => {
         80-175 Gdańsk <br />
         tel.: +48 500 204 025 <br />
         woj. pomorskie <br />
-        e-mail: marta@intuition-yachts.com
+        e-mail: renata@intuition-yachts.com
       </p>
       <p>
         <strong>Hiszpania</strong>
